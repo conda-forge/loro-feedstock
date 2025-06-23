@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: loro
-  version: 1.5.1
+  version: "1.5.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/loro-${{ version }}.tar.gz
-  sha256: 8376a14b23a11f934fcda8a02548a449ff4f5da816769c78a442a89a23cd9736
+  sha256: 70e52acb16474f7c1e52aea2a7fe2771516f1e9f73d4edfe40f3193b122402c7
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
