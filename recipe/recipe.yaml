@@ -24,12 +24,12 @@ requirements:
       then:
         - python
         - cross-python_${{ target_platform }}
+    - ${{ compiler('rust') }}
     - cargo-bundle-licenses
   host:
     - python
     - maturin >=1.8,<2.0
     - pip
-    - rust
   run:
     - python
 
