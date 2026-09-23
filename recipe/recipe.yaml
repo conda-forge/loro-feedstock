@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: loro
-  version: "1.13.2"
+  version: "1.16.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/loro-${{ version }}.tar.gz
-  sha256: 7a44db450beec71cfa12192dd11cc327e370c920fce60d48f20c871c1e33d809
+  sha256: b3e30b8d9aadc600662acd31e90ae4da9b84c98900225aa044d4c28c140a12ce
 
 build:
   number: 0
