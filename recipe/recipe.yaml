@@ -13,7 +13,7 @@ source:
   sha256: ff61dcd5e0a05d19ee538aaae2411894a47ada06e8326a37e86ccc9f9e573c5e
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       # loro 1.17.1 pins PyO3 0.26, which caps at Python 3.14; build via the stable ABI on newer Pythons
